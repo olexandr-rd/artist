@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Зв'язатися - Мисткиня</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script src="js/email.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('V0Fg0MpnZGbaY6BS9');
+        })();
+    </script>
+    <script src="https://kit.fontawesome.com/72cdf14cdd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <p class="site-title">
+            <a href="index.html" title="На головну" rel="home">Мисткиня</a>
+        </p>
+        <div class="navigation">
+            <button id="menu-button" onclick="openMenu()" title="Меню сайту" class="icon"></button>
+            <nav id="menu">
+                <a href="index.html">Головна</a>
+                <a href="works.html">Роботи</a>
+                <a href="contact.html" class="active" aria-current="page">Зв'язатися</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-contact">
+        <h1 class="contact-header">Зв'язатися зі мною</h1>
+        <form id="contact-form" name="contact-form" onsubmit="event.preventDefault()">
+
+            <input type="hidden" name="contact_number">
+
+            <label for="from_name">Ваше ім'я</label>
+            <input type="text" id="from_name" name="from_name" required>
+
+            <label for="from_email">Ваш e-mail</label>
+            <input type="email" id="from_email" name="from_email" required>
+
+            <label for="message">Ваше повідомлення</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="captcha">Скільки днів у році?</label>
+            <input type="number" id="captcha" name="captcha" required>
+            
+            <div class="form-bottom">
+                <input type="submit" value="Відправити" id="submit">
+                <p id="validate-message"></p>
+            </div>
+            
+        </form>
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/y.apelsinkaaa/" target="_blank" class="fa-brands fa-instagram"><span class="fa-sr-only">Instagram</span></a>
+        <a href="https://t.me/y_apelsinkaaa" target="_blank" class="fa-brands fa-telegram"><span class="fa-sr-only">Telegram</span></a>
+        <a href="https://www.facebook.com/Yanka.Minyaylo" target="_blank"class="fa-brands fa-facebook"><span class="fa-sr-only">Facebook</span></a>
+    </footer>
+
+</body>
+
+</html>

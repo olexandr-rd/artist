@@ -1,0 +1,348 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, footer {
+    background: #000000;
+    color: #ffffff;
+    height: 3.125rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+    box-shadow: rgba(255, 112, 112, 0.1) 0px 3px 6px, rgba(255, 0, 0, 0.404) 0px 3px 6px;
+}
+
+.site-title a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 190%;
+}
+
+#menu-button {
+    vertical-align: middle;
+    font-size: 130%;
+    background: none;
+    border: none;
+    color: #ffffff;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+#menu-button::before {
+    font-family: "Fontawesome";
+    content: "\f0c9";
+}
+
+#menu-button:hover, #menu-button:focus {
+    background: #ffffff36;
+}
+
+.show {
+    display: block;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 3.125rem;
+    left: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100vw;
+    box-shadow: rgba(255, 112, 112, 0.1) 0px 3px 6px, rgba(255, 0, 0, 0.404) 0px 3px 6px;
+}
+
+nav a {
+    width: 100%;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    display: inline-block;
+    color: #000000;
+    font-size: 140%;
+    border-bottom: #000000 2px solid;
+}
+
+nav a:hover, nav a:focus {
+    color: #000000;
+    background-color: #ff70703f;
+}
+
+main {
+    font-size: 110%;
+    text-align: center;
+    padding-top: 3.125rem;
+    background: #ffffff;
+    flex: 1 0 auto;
+}
+
+.about-me {
+    font-size: 170%;
+    margin: 12% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.my-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.description {
+    margin-top: 0;
+    font-size: 75%;
+    text-align: left;
+}
+
+h1 {
+    margin-top: 10%;
+}
+
+h2 {
+    font-size: 210%;
+}
+
+.name {
+    margin: 0;
+    color: #d12f2f;
+}
+
+img {
+    vertical-align: middle;
+    background-color: #ff70703f;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: rgba(255, 133, 133, 0.25) 0px 54px 55px, rgba(255, 0, 0, 0.12) 0px -12px 30px, rgba(255, 0, 0, 0.12) 0px 4px 6px, rgba(255, 0, 0, 0.17) 0px 12px 13px, rgba(255, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.gallery figcaption {
+    vertical-align: bottom;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+figure, .instagram-media {
+    display: inline-block;
+    max-width: 31.25rem;
+    width: 72%;
+    margin: 0 0 2.5rem !important;
+}
+
+.instagram-media {
+    min-width: 0 !important;
+    max-width: 31.25rem !important;
+    width: 70% !important;
+}
+
+figcaption {
+    margin-top: 4%;
+    font-size: 150%;
+}
+
+form {
+    font-size: 125%;
+    text-align: start;
+    width: 80%;
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 5vh;
+    width: 100%;
+    border: none;
+    border-bottom: #000000 solid 1px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#submit {
+    background-color: #ff70703f;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0;
+}
+
+#submit:hover, #submit:focus, #submit.active, .active,.active:hover, .active:focus, .dot:hover {
+    background-color: #d12f2f;
+    color:#ffffff;
+}
+
+input:focus, textarea:focus {
+    background-color: #ff70703f;
+    outline: none;
+}
+
+textarea {
+    height: 12.5rem;
+}
+
+#validate-message {
+    margin: 0;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+footer {
+    flex-shrink: 0;
+    font-size: 150%;
+    justify-content: space-evenly;
+}
+
+footer a {
+    text-align: center;
+    width: 27%;
+    color: #ffffff;
+    transition: color .5s;
+    -o-transition: color .5s;
+    -moz-transition: color .5s;
+    -webkit-transition: color .5s;
+}
+
+footer a:hover, footer a:focus {
+    color: #d12f2f;
+}
+
+@media screen and (min-width: 480px) {
+    main {
+        font-size: 110%;
+    } 
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        font-size: 120%;
+    }
+    
+    h1 {
+        margin-top: 5%;
+    }
+
+    .about-me {
+        margin: 5% 0;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .about-me > * {
+        width: 45%;
+    }
+
+    figure, .instagram-media {
+        width: 35% !important;
+    }
+
+    .about-me img {
+        max-width: 382px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+       font-size: 130%; 
+    }
+
+    h1 {
+        margin-top: 3%;
+    }
+
+    footer {
+        margin-top: 2%;
+    }
+
+
+    nav {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        height: 2.35rem;
+        width: 22rem;
+        box-shadow: none;
+        background: none;
+    }
+
+    nav a {
+        width: 6.5rem;
+        height: 2.35rem;
+        line-height: 2.35rem;
+        border-radius: 8px;
+        color: #ffffff;
+        border: none;
+        transition: color .5s;
+        -o-transition: color .5s;
+        -moz-transition: color .5s;
+        -webkit-transition: color .5s;
+    }
+    
+    nav a:hover, nav a:focus {
+        background: none;
+        color: #d12f2f;
+    }
+
+    #menu-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    main {
+        font-size: 140%; 
+    }
+
+    figure, .instagram-media {
+        width: 27% !important;
+        /* margin-bottom: ; */
+    }
+}
