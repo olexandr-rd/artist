@@ -159,7 +159,7 @@ figure, .instagram-media {
     margin: 0 0 2.5rem !important;
 }
 
-.instagram-media {
+.instagram-media { 
     min-width: 0 !important;
     max-width: 31.25rem !important;
     width: 70% !important;
@@ -208,11 +208,6 @@ input[type=number] {
     height: 40px;
     cursor: pointer;
     margin: 0;
-}
-
-#submit:hover, #submit:focus, #submit.active, .active,.active:hover, .active:focus, .dot:hover {
-    background-color: #d12f2f;
-    color:#ffffff;
 }
 
 input:focus, textarea:focus {
