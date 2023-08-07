@@ -38,6 +38,7 @@ header {
     display: inline-block;
     color: #ffffff;
     font-size: 190%;
+    transition: color .5s;
 }
 
 #menu-button {
@@ -90,6 +91,11 @@ nav a {
 nav a:hover, nav a:focus {
     color: #000000;
     background-color: #ff70703f;
+}
+
+.active, .active:hover, .active:focus, #submit:hover, #submit:focus {
+    background-color: #d12f2f;
+    color: #ffffff;
 }
 
 main {
@@ -159,7 +165,7 @@ figure, .instagram-media {
     margin: 0 0 2.5rem !important;
 }
 
-.instagram-media {
+.instagram-media { 
     min-width: 0 !important;
     max-width: 31.25rem !important;
     width: 70% !important;
@@ -208,11 +214,7 @@ input[type=number] {
     height: 40px;
     cursor: pointer;
     margin: 0;
-}
-
-#submit:hover, #submit:focus, #submit.active, .active,.active:hover, .active:focus, .dot:hover {
-    background-color: #d12f2f;
-    color:#ffffff;
+    transition: background-color .5s, color .5s;
 }
 
 input:focus, textarea:focus {
@@ -343,6 +345,5 @@ footer a:hover, footer a:focus {
 
     figure, .instagram-media {
         width: 27% !important;
-        /* margin-bottom: ; */
     }
 }
